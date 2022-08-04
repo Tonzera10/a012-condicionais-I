@@ -1,7 +1,7 @@
 let nome = prompt('Digite aqui seu nome:');
 let idade = Number(prompt('Digite aqui sua idade:'));
 let terminouMedio = prompt('Você ja terminou o ensino médio?(sim ou não)');
-let isCursandoOutraFaculdade = prompt('Você está cursando alguma faculdade?(sim ou não)');
+let isCursandoOutraFaculdade = 'não';
 
 console.log('Nome:',nome);
 if(idade >= 18){
@@ -11,6 +11,7 @@ if(idade >= 18){
 };
 if(idade >= 17 && terminouMedio==='sim'){
     console.log('Terminou o ensino médio')
+    isCursandoOutraFaculdade = prompt('Você está cursando alguma faculdade?(sim ou não)');
 }else if(idade >= 17 && terminouMedio==='não'){
 	console.log('Não terminou o ensino médio')
 }else{
